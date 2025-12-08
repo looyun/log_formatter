@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日志可视化工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>日志可视化工具</h1>
+            <p>解析和可视化超长日志行，支持提取和格式化其中的 JSON 数据</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>输入日志</h2>
+                <textarea id="logInput" placeholder="请在此输入日志内容..."></textarea>
+                <button id="parseBtn">解析日志</button>
+            </section>
+
+            <section class="output-section">
+                <h2>解析结果</h2>
+                <div id="logOutput" class="log-container"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

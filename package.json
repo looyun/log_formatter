@@ -1,0 +1,23 @@
+{
+  "name": "log-formatter",
+  "version": "1.0.0",
+  "description": "日志可视化工具 - 解析和可视化超长日志行，支持提取和格式化其中的 JSON 数据",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3000 -o",
+    "build": "echo 'Building...' && cp index.html build/ && cp style.css build/ && cp script.js build/",
+    "clean": "rm -rf build",
+    "prebuild": "npm run clean && mkdir -p build"
+  },
+  "keywords": [
+    "log",
+    "formatter",
+    "json",
+    "visualization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
